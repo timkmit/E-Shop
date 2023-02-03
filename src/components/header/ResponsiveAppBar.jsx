@@ -29,7 +29,7 @@ function ResponsiveAppBar() {
             <Box sx={{ flexGrow: 1, display: { xs: "center", md: "fixed" }, justifyContent:"center"}}>
                 <Typography
                 className="textHeader"
-                variant="h5"
+                fontSize={28}
                 component="a"
                 href="/"
                 sx={{

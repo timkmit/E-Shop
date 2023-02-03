@@ -12,7 +12,7 @@ const UnderHeader = () => {
         {pages.map((page) => (
               <Button
                 key={page}
-                sx={{ my: 0.1, color: "#2E3B55", display: "block" }}
+                sx={{ my: 0.1, color: "#2E3B55", display: "block", fontSize:"16px"}}
               >
                 {page}
               </Button>
