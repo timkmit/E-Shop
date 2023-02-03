@@ -1,4 +1,4 @@
-import Button from 'react-bootstrap/Button';
+import Button from '@mui/material/Button';
 import Card from 'react-bootstrap/Card';
 import Box from '@mui/material/Box';
 import './style.css'
@@ -18,11 +18,11 @@ function BasicExample(props) {
         </Box>
       
       <Card.Body className='cardBody'>
-        <Card.Title>{title}</Card.Title>
+        <Card.Title className='cardTitle'>{title}</Card.Title>
         <Card.Text className='cardDescription'>
           {description}
         </Card.Text>
-        <Button variant="primary">Узнать больше</Button>
+        <Button className='cardButton' variant="outlined" style={{ fontSize: '0.75rem'}}>Узнать больше</Button>
       </Card.Body>
       </Card>
     </Box>
