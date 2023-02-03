@@ -1,0 +1,44 @@
+
+.cardImg2{
+    width: 120px;
+}
+
+@media screen and (min-width: 1700px) {
+    .contentt{
+        height: 28rem;
+        width: 100%;
+        background-color: rgb(236, 236, 236);
+        background-image: url('./banner.png');
+        margin-bottom: 2rem;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    
+}
+
+@media screen and (max-width: 1700px) {
+    .contentt{
+        height: 28rem;
+        width: 100%;
+        background-color: rgb(236, 236, 236);
+        margin-bottom: 2rem;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+
+
+}
+
+@media screen and (max-width: 800px) {
+    .gridItem{
+        display: none;
+    }
+
+}
+
+
+
