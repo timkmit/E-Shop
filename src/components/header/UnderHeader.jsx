@@ -8,7 +8,7 @@ const UnderHeader = () => {
 
     return ( 
 
-        <ButtonGroup variant="text" aria-label="text button group" color="inherit">
+        <ButtonGroup variant="text" aria-label="text button group" color="inherit" >
         {pages.map((page) => (
               <Button
                 key={page}
