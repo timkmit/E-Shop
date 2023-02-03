@@ -6,6 +6,7 @@ import Paper from '@mui/material/Paper';
 import Card from 'react-bootstrap/Card';
 import card from './card.png'
 import delivery from './delivery.png'
+import cal from './cal.png'
 
 const InfoUnderHeader = () => {
 
@@ -36,12 +37,13 @@ const InfoUnderHeader = () => {
                 </Box>
                 <Box className="gridItem">
                     <Typography
-                    paddingTop={5}
-                    variant="h3"
+                    paddingTop={3}
+                    paddingBottom={5}
+                    variant="h4"
                     sx={{fontWeight: 300,
                         color: "#2E3B55"}}
                     >
-                        звоните пж
+                        по Ростовской области
                     </Typography>
                 </Box>
 
@@ -49,7 +51,9 @@ const InfoUnderHeader = () => {
 
             </Box>
             
-        </Box>
+
+            <Box className="itemsOfUnd">
+            
         <Box className="itemHeader">
         <Card.Img className='cardImg2' variant="top" src={card}/>
         <Typography
@@ -66,9 +70,26 @@ const InfoUnderHeader = () => {
         variant="h5"
         sx={{fontWeight: 500,
             color: "#2E3B55"}}>
-            Приятные цены
+            Быстрая доставка
         </Typography>
         </Box>
+
+        <Box className="itemHeader">
+        <Card.Img className='cardImg2' variant="top" src={cal}/>
+        <Typography
+        variant="h5"
+        sx={{fontWeight: 500,
+            color: "#2E3B55"}}>
+            Универсальный график
+        </Typography>
+        </Box>
+
+        </Box>
+
+        </Box>
+
+
+        
         </Box>
      );
 }
