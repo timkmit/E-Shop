@@ -13,20 +13,21 @@ import IMG from './33333.png'
 function ResponsiveAppBar() {
 
   return (
-    <AppBar position="static" style ={{background: '#2E3B55'}}>
+    <AppBar position="static" style ={{background: '#2E3B55', lineHeight: 0}}>
     <Container>
 
         
       <Container maxWidth="xl" >
         <Toolbar disableGutters >
 
-        <Box sx={{marginTop:0.5, marginRight:14}}>
+        <Box sx={{marginTop:0.5}}>
         <img src={IMG} width={80} ></img>
         </Box>   
           
 
             <Box sx={{ flexGrow: 1, display: { xs: "center", md: "fixed" }, justifyContent:"center"}}>
                 <Typography
+                className="textHeader"
                 variant="h5"
                 
                 component="a"
@@ -38,7 +39,11 @@ function ResponsiveAppBar() {
                 fontWeight: 500,
                 letterSpacing: ".2rem",
                 color: "inherit",
-                textDecoration: "none"
+                textDecoration: "none",
+                display: "inherit",
+                marginRight: "10px",
+                marginLeft: "10px",
+                
                 }}
             >
                 
@@ -46,7 +51,7 @@ function ResponsiveAppBar() {
             </Typography>
             
             </Box>
-            <Box sx={{ flexGrow: 0 , margin: 0}}>
+            <Box className='buttonNumber' sx={{ flexGrow: 0 , margin: 0, fontSize: '80px', marginRight: '-80px'}}>
           <Button variant="contained">Заказать звонок</Button>
             
           </Box>
