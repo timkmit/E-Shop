@@ -10,67 +10,83 @@ import './style.css'
 
 const UnderHeader = () => {
 
-    return ( 
-        <>
-          <ButtonGroup variant="text" aria-label="text button group" 
-        color="inherit" >
-              <Link className="pagesLink" to="/items">
-              
-              <Button
+    return (
+        <> < ButtonGroup variant = "text" aria-label = "text button group" color = "inherit" > <Link className="pagesLink" to="/">
+
+            <Button
                 className="pagesText"
-                sx={{ 
-                  my: 0.1, color: "#2E3B55", display: "block", fontSize:"16px"}}
-                >ПРОДУКЦИЯ
-              </Button></Link>
+                sx={{
+                    my: 0.1,
+                    color: "#2E3B55",
+                    display: "block",
+                    fontSize: "16px"
+                }}>ГЛАВНАЯ
+            </Button>
+        </Link>
 
-              <Link className="pagesLink" to="/doc" >
-              <Button
-                
-                sx={{ my: 0.1, color: "#2E3B55", display: "block", fontSize:"16px"}}
-                >ДОКУМЕНТЫ
-              </Button></Link>
+        <Link className="pagesLink" to="/items">
 
-              <Link className="pagesLink" to="/faq">
-              <Button
-                
-                sx={{ my: 0.1, color: "#2E3B55", display: "block", fontSize:"16px"}}
-                >ВОПРОС-ОТВЕТ
-              </Button></Link>
+            <Button
+                className="pagesText"
+                sx={{
+                    my: 0.1,
+                    color: "#2E3B55",
+                    display: "block",
+                    fontSize: "16px"
+                }}>КАТЕГОРИИ
+            </Button>
+        </Link>
 
-              <Link className="pagesLink" to="/about">
-              <Button
-                sx={{ my: 0.1, color: "#2E3B55", display: "block", fontSize:"16px"}}
-                >О НАС
-              </Button></Link>
+        <Link className="pagesLink" to="/doc">
+            <Button
+                sx={{
+                    my: 0.1,
+                    color: "#2E3B55",
+                    display: "block",
+                    fontSize: "16px"
+                }}>ДОКУМЕНТЫ
+            </Button>
+        </Link>
 
-        </ButtonGroup>
+        <Link className="pagesLink" to="/faq">
+            <Button
+                sx={{
+                    my: 0.1,
+                    color: "#2E3B55",
+                    display: "block",
+                    fontSize: "16px"
+                }}>ВОПРОС-ОТВЕТ
+            </Button>
+        </Link>
 
-        <Routes>
-          
-            <Route path="/items" element={<Items/>} >
-              
-            </Route>
+        <Link className="pagesLink" to="/about">
+            <Button
+                sx={{
+                    my: 0.1,
+                    color: "#2E3B55",
+                    display: "block",
+                    fontSize: "16px"
+                }}>О НАС
+            </Button>
+        </Link>
 
-            <Route path="/doc" element={<Documentss/>} >
-              
-            </Route>
+    </ButtonGroup>
 
-            <Route path="/faq" element={<Faqq/>} >
-              
-            </Route>
+    <Routes>
 
-            <Route path="/about" element={<About/>} >
-              
-            </Route>
+        <Route path="/items" element={<Items/>}></Route>
 
+        <Route path="/doc" element={<Documentss/>}></Route>
 
-        </Routes>
-          
-        </>
-        
+        <Route path="/faq" element={<Faqq/>}></Route>
 
+        <Route path="/about" element={<About/>}></Route>
 
-     );
+    </Routes>
+
+</>
+
+    );
 }
- 
+
 export default UnderHeader;
