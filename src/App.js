@@ -2,17 +2,31 @@
 import './App.css';
 import ResponsiveAppBar from './components/header/ResponsiveAppBar';
 import UnderHeader from './components/header/UnderHeader';
-import Content from './components/body/Content'
-import InfoUnderHeader from './components/infoUnderHeader/InfoUnderHeader';
+
+import {BrowserRouter, Route, Routes, Link, Switch} from "react-router-dom"
+import Main from './components/pages/main/Main';
+
 
 
 function App() {
   return (
     <div className="App">
+      <>
       <ResponsiveAppBar />
       <UnderHeader />
-      <InfoUnderHeader />
-      <Content />
+
+      <Routes>
+        <Route path='/main' element={<Main />}>
+        </Route>
+      </Routes>
+      
+
+      
+      
+        
+      </>
+      
+      
     </div>
   );
 }
