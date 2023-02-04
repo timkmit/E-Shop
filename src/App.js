@@ -14,9 +14,8 @@ function App() {
       <>
       <ResponsiveAppBar />
       <UnderHeader />
-
       <Routes>
-        <Route path='/main' element={<Main />}>
+        <Route path='/' element={<Main />}>
         </Route>
       </Routes>
       
