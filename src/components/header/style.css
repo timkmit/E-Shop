@@ -1,5 +1,18 @@
-@media screen and (max-width: 350px) {
-    #buttonNumber{
-        display: inherit;
+@media screen and (max-width: 500px) {
+    .pagesText{
+        font-size:10px;
+        color: #2E3B55;
+        display: block;
     }
+}
+@media screen and (min-width: 500px) {
+    .pagesText{
+        font-size: 16px;
+        color: #2E3B55;
+        display: block;
+    }
+}
+
+.pagesLink{
+    text-decoration: none;
 }

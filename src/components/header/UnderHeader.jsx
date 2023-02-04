@@ -6,6 +6,7 @@ import Items from '../pages/Items/Items'
 import Faqq from './../pages/Faq/Faqq'
 import Documentss from './../pages/Documents/Documentss'
 import About from '../pages/About/About'
+import './style.css'
 
 const UnderHeader = () => {
 
@@ -13,30 +14,34 @@ const UnderHeader = () => {
         <>
           <ButtonGroup variant="text" aria-label="text button group" 
         color="inherit" >
-
+              <Link className="pagesLink" to="/items">
+              
               <Button
-                href="/items"
-                sx={{ my: 0.1, color: "#2E3B55", display: "block", fontSize:"16px"}}
+                className="pagesText"
+                sx={{ 
+                  my: 0.1, color: "#2E3B55", display: "block", fontSize:"16px"}}
                 >ПРОДУКЦИЯ
-              </Button>
+              </Button></Link>
 
+              <Link className="pagesLink" to="/doc" >
               <Button
-                href="/doc"
+                
                 sx={{ my: 0.1, color: "#2E3B55", display: "block", fontSize:"16px"}}
                 >ДОКУМЕНТЫ
-              </Button>
+              </Button></Link>
 
+              <Link className="pagesLink" to="/faq">
               <Button
-                href="/faq"
+                
                 sx={{ my: 0.1, color: "#2E3B55", display: "block", fontSize:"16px"}}
                 >ВОПРОС-ОТВЕТ
-              </Button>
+              </Button></Link>
 
+              <Link className="pagesLink" to="/about">
               <Button
-                href="/about"
                 sx={{ my: 0.1, color: "#2E3B55", display: "block", fontSize:"16px"}}
                 >О НАС
-              </Button>
+              </Button></Link>
 
         </ButtonGroup>
 

@@ -4,10 +4,9 @@ import Box from "@mui/material/Box";
 import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
 import Container from "@mui/material/Container";
-import Button from "@mui/material/Button";
-
 import IMG from './33333.png'
-import UnderHeader from "./UnderHeader";
+import { Link } from "@mui/material";
+import Content from './../body/Content'
 
 
 
@@ -28,10 +27,10 @@ function ResponsiveAppBar() {
 
             <Box sx={{ flexGrow: 1, display: { xs: "center", md: "fixed" }, justifyContent:"center"}}>
                 <Typography
+                href="/main"
                 className="textHeader"
                 fontSize={28}
                 component="a"
-                href="/"
                 sx={{
                 mr: 3,
                 display: { xs: "none", md: "flex" },
@@ -48,8 +47,11 @@ function ResponsiveAppBar() {
                 }}
             >
                 
-                БАЗА СТРОИТЕЛЬНЫХ МАТЕРИАЛОВ
+                  БАЗА СТРОИТЕЛЬНЫХ МАТЕРИАЛОВ
+                
+                
             </Typography>
+           
             </Box>
             {/*<Box className='buttonNumber' sx={{ flexGrow: 0 , margin: 0, fontSize: '80px', marginRight: '-80px'}}>
           <Button variant="contained">Заказать звонок</Button>
