@@ -3,6 +3,8 @@ import axios, {spread} from 'axios';
 import Box from '@mui/material/Box';
 import Grid from '@mui/material/Grid';
 import {useState, useEffect} from 'react'
+import './style.css'
+
 
 const CategoryList = () => {
 
@@ -40,7 +42,7 @@ const CategoryList = () => {
 
                 {
                     cards.map((cards, value) => (
-                        <Grid key={value} item="item">
+                        <Grid className="pagesLink2" key={value} item="item">
                             <BasicExample
                                 title={cards.title}
                                 description={category.description}

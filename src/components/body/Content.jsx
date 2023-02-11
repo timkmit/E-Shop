@@ -19,8 +19,8 @@ export default function SimpleContainer() {
                 }
             }}>
             <Box
-                sx={{
-                    bgcolor: '#f2f2f2',
+                sx={{margin: '10px',
+                    cursor: 'pointer',
                     backgroundAttachment: 'fixed',
                     width: '80vw',
                     display: "block"
