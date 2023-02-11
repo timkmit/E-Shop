@@ -1,8 +1,11 @@
-import {Typography} from "@mui/material";
+import { Typography} from "@mui/material";
 import {useState, useEffect} from 'react';
 import axios, {spread} from 'axios';
 import Grid from '@mui/material/Grid';
 import BasicExample from "./../../card/Card";
+import {Link} from "react-router-dom";
+import './style.css'
+
 
 const Items = () => {
 
@@ -35,17 +38,22 @@ const Items = () => {
 
     return (
 
-        <Grid container="container" spacing={2}>
-            <Grid container="container" justifyContent="center">
+        <Grid container="container" spacing={0} >
+            <Grid  container="container" justifyContent="center">
                 {
                     category.map((category, value) => (
-                        <Grid key={value} item="item">
+                        <Link className="pagesLink2" to={value} >
+                            <Grid key={value} item="item">
                             <BasicExample
                                 title={category.title}
                                 description={category.description}
                                 img={category.photo}
-                                key={value}/>
-                        </Grid>
+                                key={value}>
+                                </BasicExample>
+                                
+                            </Grid>
+                        </Link>
+                        
                     ))
                 }
 
