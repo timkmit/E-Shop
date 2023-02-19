@@ -2,7 +2,7 @@ import { Typography} from "@mui/material";
 import {useState, useEffect} from 'react';
 import axios, {spread} from 'axios';
 import Grid from '@mui/material/Grid';
-import BasicExample from "./../../card/Card";
+import BasicExampleCategory from "./../../card/CardCategory";
 import {Link} from "react-router-dom";
 import './style.css'
 
@@ -14,7 +14,7 @@ const Items = () => {
 
     useEffect(() => {
         axios
-            .get(`http://127.0.0.1:8000/`)
+            .get(`http://127.0.0.1:8000/category/`)
             .then(response => {
                 response
                     .data
@@ -25,12 +25,7 @@ const Items = () => {
                                 element
                             ]);
                         }
-                        if (!element.id) {
-                            setCards(cards => [
-                                ...cards,
-                                element
-                            ]);
-                        }
+                         
                     });
             });
 
@@ -44,12 +39,12 @@ const Items = () => {
                     category.map((category, value) => (
                         <Link className="pagesLink2" to={value} >
                             <Grid key={value} item="item">
-                            <BasicExample
+                            <BasicExampleCategory
                                 title={category.title}
                                 description={category.description}
                                 img={category.photo}
                                 key={value}>
-                                </BasicExample>
+                                </BasicExampleCategory>
                                 
                             </Grid>
                         </Link>

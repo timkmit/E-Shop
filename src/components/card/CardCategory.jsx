@@ -3,9 +3,9 @@ import Card from 'react-bootstrap/Card';
 import Box from '@mui/material/Box';
 import './style.css'
 
-function BasicExample(props) {
+function BasicExampleCategory(props) {
 
-    const {title, description, img, price} = props;
+    const {title, description, img} = props;
 
     
 
@@ -27,18 +27,12 @@ function BasicExample(props) {
                     <Card.Text className='cardDescription'>
                         {description}
                     </Card.Text>
-                    
-                        <Card.Text className='cardDescription'>
-                        {price} руб.
-                    </Card.Text>
-                    
-                    
                     <Button
                         className='cardButton'
                         variant="outlined"
                         style={{
                             fontSize: '0.75rem'
-                        }}>Заказать</Button>
+                        }}>Посмотреть</Button>
                 </Card.Body>
             </Card>
         </Box>
@@ -46,4 +40,4 @@ function BasicExample(props) {
     );
 }
 
-export default BasicExample;
+export default BasicExampleCategory;

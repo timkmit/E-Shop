@@ -35,3 +35,7 @@
     font-size: 1.4rem;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+
+.ardDescription{
+    display: flex;
+}

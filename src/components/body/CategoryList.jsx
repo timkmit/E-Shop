@@ -1,6 +1,5 @@
 import BasicExample from "../card/Card";
 import axios, {spread} from 'axios';
-import Box from '@mui/material/Box';
 import Grid from '@mui/material/Grid';
 import {useState, useEffect} from 'react'
 import './style.css'
@@ -45,9 +44,9 @@ const CategoryList = () => {
                         <Grid className="pagesLink2" key={value} item="item">
                             <BasicExample
                                 title={cards.title}
-                                description={category.description}
                                 img={cards.photo}
-                                key={value}/>
+                                key={value}
+                                price={cards.price}/>
                         </Grid>
                     ))
                 }

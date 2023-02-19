@@ -6,12 +6,14 @@
 
 
 
-@media screen and (min-width: 1700px) {
+@media screen and (min-width: 1650px) {
     .contentt{
         height: 28rem;
         width: 100%;
         background-color: rgb(236, 236, 236);
         background-image: url('./banner.png');
+        background-repeat: no-repeat;
+        background-position: center;
         margin-bottom: 2rem;
         justify-content: center;
         align-items: center;
@@ -28,11 +30,14 @@
     
 }
 
-@media screen and (max-width: 1700px) and (min-width: 800px) {
+@media screen and (max-width: 1650px) and (min-width: 800px) {
     .contentt{
         height: 28rem;
         width: 100%;
         background-color: rgb(236, 236, 236);
+        background-image: url('./banner-mini.png');
+        background-repeat: no-repeat;
+        background-position: center;
         margin-bottom: 2rem;
         justify-content: center;
         align-items: center;
@@ -53,6 +58,9 @@
         height: 28rem;
         width: 100%;
         background-color: rgb(236, 236, 236);
+        background-image: url('./banner-phone.png');
+        background-repeat: no-repeat;
+        background-position: center;
         margin-bottom: 2rem;
         justify-content: center;
         align-items: center;

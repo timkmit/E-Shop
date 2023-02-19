@@ -48,16 +48,7 @@ const UnderHeader = () => {
             </Button>
         </Link>
 
-        <Link className="pagesLink" to="/faq">
-            <Button
-                sx={{
-                    my: 0.1,
-                    color: "#2E3B55",
-                    display: "block",
-                    fontSize: "16px"
-                }}>ВОПРОС-ОТВЕТ
-            </Button>
-        </Link>
+        
 
         <Link className="pagesLink" to="/about">
             <Button
