@@ -1,3 +1,4 @@
+Site working without backend rn, so u cant see al possibilities, just some frontend;)
 https://e-shop-bjk0nc44h-timkmit.vercel.app/
 # Getting Started with Create React App
 
