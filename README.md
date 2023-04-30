@@ -1,4 +1,5 @@
-https://e-shop-bjk0nc44h-timkmit.vercel.app/
+Site working without backend on this git, so u cant see all possibilities, just some frontend;) when the site will completed, i will show everything
+# https://e-shop-bjk0nc44h-timkmit.vercel.app/
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
