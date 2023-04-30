@@ -1,3 +1,4 @@
+import {BrowserRouter, Route, Routes, Link} from "react-router-dom"
 import Button from '@mui/material/Button';
 import Card from 'react-bootstrap/Card';
 import Box from '@mui/material/Box';
@@ -32,7 +33,10 @@ function BasicExampleCategory(props) {
                         variant="outlined"
                         style={{
                             fontSize: '0.75rem'
-                        }}>Посмотреть</Button>
+                        }}>
+                            <Link className="pagesLink" to="/categorycard">
+                                Посмотреть
+                            </Link></Button>
                 </Card.Body>
             </Card>
         </Box>

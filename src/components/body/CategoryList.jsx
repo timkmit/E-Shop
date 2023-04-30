@@ -12,37 +12,25 @@ const CategoryList = () => {
 
     useEffect(() => {
         axios
-            .get(`http://127.0.0.1:8000/`)
+            .get('http://127.0.0.1:8000/')
             .then(response => {
-                response
-                    .data
-                    .forEach(element => {
-                        if (element.id) {
-                            setCategory(category => [
-                                ...category,
-                                element
-                            ]);
-                        }
-                        if (!element.id) {
-                            setCards(cards => [
-                                ...cards,
-                                element
-                            ]);
-                        }
-                    });
+                setCards(response.data);
+            })
+            .catch(error => {
+                console.error('Ошибка при загрузке данных: ', error);
             });
-
     }, []);
 
     return (
 
-        <Grid container="container" spacing={2}>
-            <Grid container="container" justifyContent="center">
+        <Grid container={true} spacing={2}>
+            <Grid container={true} justifyContent="center">
 
                 {
                     cards.map((cards, value) => (
-                        <Grid className="pagesLink2" key={value} item="item">
+                        <Grid className="pagesLink2" key={value}>
                             <BasicExample
+                                id={value}
                                 title={cards.title}
                                 img={cards.photo}
                                 key={value}

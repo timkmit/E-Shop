@@ -2,7 +2,7 @@ import * as React from "react";
 import ButtonGroup from '@mui/material/ButtonGroup';
 import Button from "@mui/material/Button";
 import {BrowserRouter, Route, Routes, Link} from "react-router-dom"
-import Items from '../pages/Items/Items'
+import Items from "../pages/Categoties/Items";
 import Faqq from './../pages/Faq/Faqq'
 import Documentss from './../pages/Documents/Documentss'
 import About from '../pages/About/About'
@@ -11,7 +11,8 @@ import './style.css'
 const UnderHeader = () => {
 
     return (
-        <> < ButtonGroup variant = "text" aria-label = "text button group" color = "inherit" > <Link className="pagesLink" to="/">
+        <> < ButtonGroup variant = "text" aria-label = "text button group" color = "inherit" > 
+        <Link className="pagesLink" to="/">
 
             <Button
                 className="pagesText"

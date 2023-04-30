@@ -15,7 +15,7 @@ function ResponsiveAppBar() {
             <Container>
 
                 <Container maxWidth="xl">
-                    <Toolbar disableGutters="disableGutters">
+                    <Toolbar disableGutters={true}>
 
                         <Box
                             sx={{
